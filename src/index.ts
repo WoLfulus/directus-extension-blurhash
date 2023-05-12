@@ -17,7 +17,7 @@ export default defineHook<HookConfig>(async function (
   let sharp: any = null;
 
   try {
-    sharp = require("sharp").default;
+    sharp = require("sharp");
   } catch (error) {
     console.log(error);
     process.exit(1);
